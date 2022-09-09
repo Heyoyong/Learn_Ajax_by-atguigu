@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同源者</title>
+</head>
+
+<body>
+    <h1>同源页面</h1>
+    <button>点击获取用户数据</button>
+    <script>
+        var btn = document.querySelector('button');
+        btn.onclick = function () {
+            const xhr = new XMLHttpRequest();
+            //因为是同源,所以可以方便的略写url
+            xhr.open('GET', '/homology');
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && status < 300) {
+                        console.log(xhr.response);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
