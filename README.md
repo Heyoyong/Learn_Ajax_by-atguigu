@@ -1,8 +1,12 @@
 # Learn_Ajax_by-atguigu
 
+### 视频链接
+
+​	[【尚硅谷】3小时Ajax入门到精通](https://www.bilibili.com/video/BV1WC4y1b78y?)
+
 ### 文件介绍
 
-#### 01~07 Html文件 
+#### 01~07 Html文件
 
 使用**原生JavaScript**进行Ajax操作
 
